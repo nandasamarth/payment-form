@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Payment Form</title>
+</head>
+
+<style type="text/css">
+
+form {
+  margin: 0 auto;
+  width : 600px;
+
+  padding: 1em;
+  border : 1px solid #CCC;
+  border-radius: 1em;
+}
+
+label span{
+  display: inline-block;
+  width  : 120px;
+  text-align: right;
+}
+
+</style>
+
+<body>
+
+<form>
+  <h1>Payment form</h1>
+  <p>Required fields are indicated by <bold>*</bold></p>
+  
+  <section>
+  <h2>Contact information</h2>
+    
+    <fieldset>
+    <legend>Title</legend>    
+      <input type="radio" name="title" value="M." />
+      Mister
+      <br>
+   
+      <input type="radio" name="title" value="Ms." />
+      Miss
+       </fieldset>
+    
+    <p>
+    <label for="name">
+    <span>Name: </span>
+    <input type="text" id="name" name="username" required />
+      <bold>*</bold>
+    </label>
+  </p>
+    
+ <p>
+    <label for="mail">
+    <span>E-mail: </span>
+    <input type="email" id="mail" name="usermail" required />
+      <bold>*</bold>
+    </label>
+  </p>
+    
+    <p>
+      <label for="phnum">
+        <span>Phone Number:</span>
+        <input type="phonenumber" id="phnum"
+               name="phnumber" optional />
+        <i>optional</i>
+      </label>
+    </p>
+    
+  </section>
+  
+   <section>
+  <h2>Payment information</h2>
+     
+     
+ <p>
+    <label for="card">
+    <span>Card type:</span>
+    <select id="card" name="usercard">
+      <option value="visa">Visa</option>
+      <option value="mc">Mastercard</option>   <option value="amex">American Express</option>
+      <option value="discovery">Discovery</option>
+    </select>
+    </label>
+  </p>
+     
+  <p>
+    <label for="number">
+    <span>Card number:</span>
+    <input type="text" id="number" name="cardnumber" required />
+        </label>
+  </p>
+     
+   <p>
+    <label for="date">
+    <span>Expiration date:</span>
+    <input type="text" id="date" name="expiration" required />
+       <em>formated as mm/yy</em>
+    </label>
+  </p>
+
+  
+  <p>
+    <label for="seccode">
+      <span>CVV:</span>  
+  <input type="number" id="seccode"
+         name = "code" required />
+    </label>
+     </p>
+  </section>
+  
+   <section>
+  <p>
+    <button>Submit</button>
+  </p>
+  </section>
+</form>
+ 
+ </body>
+</html>
